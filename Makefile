@@ -6,7 +6,7 @@
 #    By: pcahier <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/07 15:00:01 by pcahier           #+#    #+#              #
-#    Updated: 2017/11/14 16:48:24 by pcahier          ###   ########.fr        #
+#    Updated: 2017/11/15 21:13:08 by pcahier          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ all: $(NAME)
 $(NAME):
 	$(CC) $(CFLAGS) -c $(SRC)
 	ar rc $(NAME) $(OBJ) $(INC)
+	ranlib $(NAME)
 
 clean:
 	rm -f $(OBJ)
