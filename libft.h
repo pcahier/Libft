@@ -6,7 +6,7 @@
 /*   By: pcahier <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/07 17:10:51 by pcahier           #+#    #+#             */
-/*   Updated: 2017/11/14 16:48:05 by pcahier          ###   ########.fr       */
+/*   Updated: 2017/11/16 12:20:29 by pcahier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,13 @@ typedef struct	s_list
 	size_t			content_size;
 	struct s_list	*next;
 }				t_list;
+
 typedef	struct	s_div
 {
 	int		quot;
 	int		rem;
 }				t_div;
+
 void			ft_kirbydance(void);
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strncpy(char *dst, const char *src, size_t len);
@@ -56,6 +58,7 @@ int				ft_isgraph(int c);
 int				ft_ispunct(int c);
 int				ft_abs(int x);
 t_div			ft_div(int num, int denom);
+int				ft_sqrt(int nb);
 int				ft_str_is_alpha(char *str);
 char			*ft_strlowcase(char *str);
 char			*ft_strupcase(char *str);
